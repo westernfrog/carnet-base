@@ -52,8 +52,8 @@ const messages = [
 export default function ChatArea(params) {
   return (
     <>
-      <section className="lg:col-span-9 lg:row-span-16 row-span-full rounded-2xl bg-purple-900/5 flex flex-col justify-center">
-        <div className="flex items-center justify-between gap-4 lg:px-6 lg:py-3.5 px-5 lg:py-3.5 py-5 shadow bg-purple-900 lg:rounded-t-2xl lg:text-white">
+      <section className="lg:col-span-9 lg:row-span-16 row-span-full rounded-2xl bg-violet-900/5 flex flex-col justify-center">
+        <div className="flex items-center justify-between gap-4 lg:px-6 lg:py-3.5 px-5 lg:py-3.5 py-5 shadow bg-violet-900 lg:rounded-t-2xl lg:text-white">
           <Link href="/" className="lg:hidden block text-white">
             <ArrowLeftIcon className="w-6 h-6" />
           </Link>
@@ -64,7 +64,7 @@ export default function ChatArea(params) {
                 width={50}
                 height={50}
                 alt="Profile Picture"
-                className="lg:w-7 lg:h-7 w-5 h-5 object-cover object-center rounded-full ring-2 ring-purple-100/50 flex-shrink-0"
+                className="lg:w-7 lg:h-7 w-5 h-5 object-cover object-center rounded-full ring-2 ring-violet-100/50 flex-shrink-0"
               />
             </div>
             <h1 className="flex flex-1 text-lg font-medium text-white">
@@ -81,7 +81,7 @@ export default function ChatArea(params) {
           ))}
         </div>
         <form className="flex items-center justify-between gap-4 bg-white shadow lg:rounded-b-2xl px-6">
-          <button className="flex-shrink-0 text-purple-900">
+          <button className="flex-shrink-0 text-violet-900">
             <PlusCircleIcon className="w-8 h-8" />
           </button>
           <input
@@ -89,7 +89,7 @@ export default function ChatArea(params) {
             className="w-full bg-transparent border-0 focus:ring-0 py-4"
             placeholder="Type your message here!"
           />
-          <button className="flex-shrink-0 bg-black/40 p-2 rounded-2xl text-white hover:text-purple-900 text-sm font-medium lg:shadow lg:hover:bg-purple-900/40 transition duration-300 ease-in-out flex items-center gap-2">
+          <button className="flex-shrink-0 bg-black/40 p-2 rounded-2xl text-white hover:text-violet-900 text-sm font-medium lg:shadow lg:hover:bg-violet-900/40 transition duration-300 ease-in-out flex items-center gap-2">
             <PaperAirplaneIcon className="w-5 h-5" />
           </button>
         </form>

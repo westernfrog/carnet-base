@@ -81,13 +81,13 @@ export default function Messages(params) {
   return (
     <>
       <section
-        className={`relative lg:col-span-4 row-span-16 lg:rounded-2xl bg-purple-900/5 lg:flex flex-col ${
+        className={`relative lg:col-span-4 row-span-16 lg:rounded-2xl bg-violet-900/5 lg:flex flex-col ${
           router == "/chat" ? "hidden" : ""
         }`}
       >
-        <div className="hidden lg:flex items-center justify-between gap-4 lg:px-6 lg:py-4 px-5 py-4 shadow lg:bg-purple-900 rounded-t-2xl lg:text-white">
+        <div className="hidden lg:flex items-center justify-between gap-4 lg:px-6 lg:py-4 px-5 py-4 shadow lg:bg-violet-900 rounded-t-2xl lg:text-white">
           <h1 className="text-lg font-medium">Messages</h1>
-          <button className="flex-shrink-0 lg:bg-black/30 bg-purple-900 px-3 py-2.5 rounded-2xl text-green-400 text-sm font-medium lg:shadow lg:hover:bg-white/30 transition duration-300 ease-in-out flex items-center gap-2">
+          <button className="flex-shrink-0 lg:bg-black/30 bg-violet-900 px-3 py-2.5 rounded-2xl text-green-400 text-sm font-medium lg:shadow lg:hover:bg-white/30 transition duration-300 ease-in-out flex items-center gap-2">
             <UserIcon className="w-4 h-4" />8 Online
           </button>
         </div>
@@ -96,14 +96,14 @@ export default function Messages(params) {
             <Link
               key={index}
               href="/chat"
-              className="relative flex items-center gap-4 p-5 hover:bg-purple-900/10 transition duration-500 ease-in-out pe-20"
+              className="relative flex items-center gap-4 p-5 hover:bg-violet-900/10 transition duration-500 ease-in-out pe-20"
             >
               <Image
                 src={item.profile_pic}
                 width={50}
                 height={50}
                 alt="Profile Picture"
-                className="w-12 h-12 object-cover object-center rounded-full ring-2 ring-purple-600 flex-shrink-0"
+                className="w-12 h-12 object-cover object-center rounded-full ring-2 ring-violet-600 flex-shrink-0"
               />
               <div className="flex flex-col text-sm">
                 <h1 className="font-semibold">{item.name}</h1>
