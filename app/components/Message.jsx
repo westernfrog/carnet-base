@@ -13,7 +13,7 @@ export default function Message(props) {
             className="order-last w-8 h-8 object-cover object-center rounded-full ring-2 ring-violet-950/90 flex-shrink-0"
           />
           <div className="flex flex-col gap-2 text-white">
-            <div className="relative p-5 rounded-2xl bg-violet-950/80 shadow lg:max-w-xl max-w-sm">
+            <div className="relative p-5 rounded-2xl bg-violet-950/60 shadow lg:max-w-xl max-w-sm">
               <h1 className="tracking-normal lg:text-base text-sm">
                 {props.message}
               </h1>
