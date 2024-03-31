@@ -1,7 +1,13 @@
 import { InfoCircledIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Message from "./Message";
-import { PaperAirplaneIcon, PlusCircleIcon } from "@heroicons/react/24/solid";
+import {
+  ArrowLeftIcon,
+  EllipsisVerticalIcon,
+  PaperAirplaneIcon,
+  PlusCircleIcon,
+} from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const messages = [
   { sender: true, message: "Hi! How are you doing today?" },
@@ -47,19 +53,26 @@ export default function ChatArea(params) {
   return (
     <>
       <section className="lg:col-span-9 lg:row-span-16 row-span-full rounded-2xl bg-purple-900/5 flex flex-col justify-center">
-        <div className="flex items-center justify-between gap-4 lg:px-6 lg:py-3.5 px-5 lg:py-3.5 py-3 shadow bg-purple-900 lg:rounded-t-2xl lg:text-white">
-          <button className="flex-shrink-0 bg-black/30 px-3 py-2.5 rounded-2xl text-white text-sm font-medium lg:shadow lg:hover:bg-white/30 transition duration-300 ease-in-out flex items-center gap-2">
-            <Image
-              src="https://images.unsplash.com/photo-1547460719-5bb9d93c46e3?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              width={50}
-              height={50}
-              alt="Profile Picture"
-              className="lg:w-6 lg:h-6 w-5 h-5 object-cover object-center rounded-full ring-2 ring-purple-200 flex-shrink-0"
-            />
-          </button>
-          <h1 className="text-lg font-medium text-white">Emily Willis</h1>
-          <button className="flex-shrink-0 bg-black/30 px-3 py-2.5 rounded-2xl text-white text-sm font-medium lg:shadow lg:hover:bg-white/30 transition duration-300 ease-in-out flex items-center gap-2">
-            <InfoCircledIcon className="lg:w-6 lg:h-6 w-5 h-5" />
+        <div className="flex items-center justify-between gap-4 lg:px-6 lg:py-3.5 px-5 lg:py-3.5 py-5 shadow bg-purple-900 lg:rounded-t-2xl lg:text-white">
+          <Link href="/" className="lg:hidden block text-white">
+            <ArrowLeftIcon className="w-6 h-6" />
+          </Link>
+          <div className="flex items-center justify-between lg:w-full gap-2">
+            <div className="flex lg:flex-1">
+              <Image
+                src="https://images.unsplash.com/photo-1547460719-5bb9d93c46e3?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                width={50}
+                height={50}
+                alt="Profile Picture"
+                className="lg:w-7 lg:h-7 w-5 h-5 object-cover object-center rounded-full ring-2 ring-purple-100/50 flex-shrink-0"
+              />
+            </div>
+            <h1 className="flex flex-1 text-lg font-medium text-white">
+              Emily Willis
+            </h1>
+          </div>
+          <button className="flex-shrink-0 px-3 lg:py-2.5 rounded-2xl text-white flex items-center gap-2">
+            <EllipsisVerticalIcon className="w-6 h-6" />
           </button>
         </div>
         <div className="shadow overflow-auto h-full px-8 py-6 pb-14 space-y-8">
@@ -67,7 +80,7 @@ export default function ChatArea(params) {
             <Message key={index} sender={item.sender} message={item.message} />
           ))}
         </div>
-        <form className="flex items-center justify-between gap-4 bg-white shadow lg:rounded-b-2xl px-6 py-1">
+        <form className="flex items-center justify-between gap-4 bg-white shadow lg:rounded-b-2xl px-6">
           <button className="flex-shrink-0 text-purple-900">
             <PlusCircleIcon className="w-8 h-8" />
           </button>

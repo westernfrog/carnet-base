@@ -4,7 +4,7 @@ export default function Message(props) {
   return (
     <>
       {props.sender == true ? (
-        <div className="flex items-end justify-end gap-4">
+        <div className="flex items-end justify-end gap-2">
           <Image
             src="https://images.unsplash.com/photo-1587750113469-d2ba02441e8f?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             width={50}
@@ -24,7 +24,7 @@ export default function Message(props) {
           </div>
         </div>
       ) : (
-        <div className="flex items-end gap-4">
+        <div className="flex items-end gap-2">
           <Image
             src="https://images.unsplash.com/photo-1547460719-5bb9d93c46e3?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             width={50}
