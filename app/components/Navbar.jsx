@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`lg:col-span-1 lg:row-span-16 row-span-2 lg:rounded-2xl bg-violet-900 lg:block ${
+        className={`lg:col-span-1 lg:row-span-16 row-span-2 lg:rounded-2xl bg-violet-950/90 lg:block ${
           router == "/chat" ? "hidden" : ""
         }`}
       >
@@ -123,8 +123,8 @@ export default function Navbar() {
                       href={item.href}
                       className={`${
                         router == item.href
-                          ? "bg-violet-900"
-                          : "bg-violet-950/60"
+                          ? "bg-violet-950/90"
+                          : "bg-violet-950/90/60"
                       } p-3 rounded-2xl backdrop-blur-3xl hover:bg-white/30 transition duration-300 ease-in-out`}
                     >
                       <item.icon className="w-6 h-6" />
