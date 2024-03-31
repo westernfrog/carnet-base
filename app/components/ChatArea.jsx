@@ -60,7 +60,7 @@ export default function ChatArea(params) {
             <EllipsisVerticalIcon className="w-6 h-6" />
           </button>
         </div>
-        <div className="shadow overflow-auto h-full px-8 py-6 pb-14 space-y-8">
+        <div className="shadow overflow-auto h-full lg:px-8 px-5 py-6 pb-14 space-y-8">
           {messages.map((item, index) => (
             <Message key={index} sender={item.sender} message={item.message} />
           ))}
