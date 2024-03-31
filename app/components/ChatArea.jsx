@@ -52,7 +52,7 @@ const messages = [
 export default function ChatArea(params) {
   return (
     <>
-      <section className="lg:col-span-9 lg:row-span-16 row-span-full rounded-2xl bg-violet-950/90/5 flex flex-col justify-center">
+      <section className="lg:col-span-9 lg:row-span-16 row-span-full rounded-2xl bg-violet-950/5 flex flex-col justify-center">
         <div className="flex items-center justify-between gap-4 lg:px-6 lg:py-3.5 px-5 lg:py-3.5 py-5 shadow bg-violet-950/90 lg:rounded-t-2xl lg:text-white">
           <Link href="/" className="lg:hidden block text-white">
             <ArrowLeftIcon className="w-6 h-6" />
