@@ -11,13 +11,13 @@ module.exports = {
         14: "repeat(14, minmax(0, 1fr))",
       },
       gridTemplateRows: {
-        16: "repeat(16, minmax(0, 1fr))",
+        18: "repeat(18, minmax(0, 1fr))",
+      },
+      gridRow: {
+        "span-16": "span 12 / span 12",
       },
       gridRow: {
         "span-16": "span 16 / span 16",
-      },
-      gridRow: {
-        "span-14": "span 14 / span 14",
       },
     },
   },

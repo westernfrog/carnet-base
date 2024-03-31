@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <main className="fixed lg:inset-6 inset-0">
-          <section className="grid lg:grid-cols-14 lg:grid-rows-12 grid-rows-12 xl:gap-6 lg:gap-2 h-full">
+          <section className="grid lg:grid-cols-14 lg:grid-rows-12 grid-rows-18 xl:gap-6 lg:gap-2 h-full">
             <Navbar />
             <Messages />
             {children}

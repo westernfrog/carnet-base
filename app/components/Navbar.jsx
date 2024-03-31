@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`lg:col-span-1 lg:row-span-14 row-span-2 lg:rounded-2xl bg-purple-900 lg:block ${
+        className={`lg:col-span-1 lg:row-span-16 row-span-2 lg:rounded-2xl bg-purple-900 lg:block ${
           router == "/chat" ? "hidden" : ""
         }`}
       >

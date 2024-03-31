@@ -81,7 +81,7 @@ export default function Messages(params) {
   return (
     <>
       <section
-        className={`relative lg:col-span-4 row-span-14 lg:rounded-2xl bg-purple-900/5 lg:flex flex-col ${
+        className={`relative lg:col-span-4 row-span-16 lg:rounded-2xl bg-purple-900/5 lg:flex flex-col ${
           router == "/chat" ? "hidden" : ""
         }`}
       >
