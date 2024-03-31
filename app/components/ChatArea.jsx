@@ -32,21 +32,6 @@ const messages = [
   { sender: true, message: "Sure! Take care." },
   { sender: false, message: "You too! Bye!" },
   { sender: true, message: "Bye!" },
-  {
-    sender: false,
-    message:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum voluptates laborum, quibusdam ex tempore pariatur, impedit nihil obcaecati iste cumque quis odio nobis, enim fugit quam! Possimus alias consequatur dolorum!",
-  },
-  {
-    sender: true,
-    message:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum voluptates laborum, quibusdam ex tempore pariatur, impedit nihil obcaecati iste cumque quis odio nobis, enim fugit quam! Possimus alias consequatur dolorum!",
-  },
-  {
-    sender: true,
-    message:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum voluptates laborum, quibusdam ex tempore pariatur, impedit nihil obcaecati iste cumque quis odio nobis, enim fugit quam! Possimus alias consequatur dolorum!",
-  },
 ];
 
 export default function ChatArea(params) {
