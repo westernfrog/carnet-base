@@ -71,7 +71,7 @@ export default function ChatArea(params) {
               Emily Willis
             </h1>
           </div>
-          <button className="flex-shrink-0 px-3 lg:py-2.5 rounded-2xl text-white flex items-center gap-2">
+          <button className="flex-shrink-0 lg:py-2.5 rounded-2xl text-white flex items-center gap-2">
             <EllipsisVerticalIcon className="w-6 h-6" />
           </button>
         </div>
