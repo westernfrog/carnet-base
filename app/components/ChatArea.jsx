@@ -86,7 +86,7 @@ export default function ChatArea(params) {
           </button>
           <input
             type="text"
-            className="w-full bg-transparent border-0 focus:ring-0 py-4"
+            className="w-full bg-transparent border-0 focus:ring-0 py-4 placeholder:text-sm"
             placeholder="Type your message here!"
           />
           <button className="flex-shrink-0 bg-black/40 p-2 rounded-2xl text-white hover:text-violet-900 text-sm font-medium lg:shadow lg:hover:bg-violet-900/40 transition duration-300 ease-in-out flex items-center gap-2">
