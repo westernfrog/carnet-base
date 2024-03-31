@@ -122,9 +122,7 @@ export default function Navbar() {
                       key={index}
                       href={item.href}
                       className={`${
-                        router == item.href
-                          ? "bg-violet-950/90"
-                          : "bg-violet-950/90/60"
+                        router == item.href ? "bg-violet-950/90" : "bg-black/30"
                       } p-3 rounded-2xl backdrop-blur-3xl hover:bg-white/30 transition duration-300 ease-in-out`}
                     >
                       <item.icon className="w-6 h-6" />
